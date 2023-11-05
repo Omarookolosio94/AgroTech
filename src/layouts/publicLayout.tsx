@@ -17,13 +17,21 @@ export default function PublicLayout() {
   };
 
   return (
-    <>
+    <div className="relative">
       <Navbar />
-      <Routes>
-        {getRoutes(routes)}
-        <Route path="/" element={<Navigate to="/public/home" replace />} />
-      </Routes>
+      <div
+        className="py-[90px]"
+        style={{
+          zIndex: 50,
+          minHeight: '87vh',
+        }}
+      >
+        <Routes>
+          {getRoutes(routes)}
+          <Route path="/" element={<Navigate to="/public/home" replace />} />
+        </Routes>
+      </div>
       <Footer />
-    </>
+    </div>
   );
 }
