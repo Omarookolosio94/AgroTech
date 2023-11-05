@@ -1,20 +1,20 @@
-import { footer_links } from 'core/const/styling';
 import { NavLink } from 'react-router-dom';
+import { activeFooterLinks, footerLinks } from 'core/const/styling';
 
 const Footer = () => {
   return (
-    <div className="bg-darkgreen">
-      <footer className="w-11/12 md:w-4/5 mx-auto flex justify-between py-8 text-white font-ui-sans">
-        <p className="text-xs uppercase">
-          &copy; {new Date().getFullYear()} Zoges Agro and Allied. All Rights
-          Reserved
+    <div className="border bg-darkgreen border-t-1">
+      <footer className="w-11/12 md:w-4/5 mx-auto flex flex-col-reverse md:flex-row justify-between items-center py-6 text-white font-ui-sans gap-4">
+        <p className="text-xs uppercase text-center">
+          &copy; {new Date().getFullYear()} Zoges Agro and Allied. <br /> All
+          Rights Reserved
         </p>
 
-        <nav className="flex gap-3">
+        <nav className="flex gap-2">
           <NavLink
             to="/public/home"
             className={({ isActive }) =>
-              isActive ? `${footer_links} font-bold` : footer_links
+              !isActive ? footerLinks : activeFooterLinks
             }
           >
             Home
@@ -22,7 +22,7 @@ const Footer = () => {
           <NavLink
             to="/public/services"
             className={({ isActive }) =>
-              isActive ? `${footer_links} font-bold` : footer_links
+              !isActive ? footerLinks : activeFooterLinks
             }
           >
             Services
@@ -30,7 +30,7 @@ const Footer = () => {
           <NavLink
             to="/public/company"
             className={({ isActive }) =>
-              isActive ? `${footer_links} font-bold` : footer_links
+              !isActive ? footerLinks : activeFooterLinks
             }
           >
             Company
@@ -38,7 +38,7 @@ const Footer = () => {
           <NavLink
             to="/public/stories"
             className={({ isActive }) =>
-              isActive ? `${footer_links} font-bold` : footer_links
+              !isActive ? footerLinks : activeFooterLinks
             }
           >
             Stories

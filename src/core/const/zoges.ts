@@ -1,0 +1,3 @@
+export const zogesInfo = {
+  services: [''],
+};

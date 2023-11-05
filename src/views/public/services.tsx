@@ -1,5 +1,9 @@
 const Services = () => {
-  return <p>Welcome to Services page</p>;
+  return (
+    <div className="w-11/12 md:w-4/5 mx-auto">
+      <p>Services</p>
+    </div>
+  );
 };
 
 export default Services;

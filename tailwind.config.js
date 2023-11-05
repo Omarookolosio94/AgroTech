@@ -4,12 +4,12 @@ module.exports = {
   theme: {
     extend: {
       colors: () => ({
-        dark: '#d8d8d8',
+        dark: '#1a1a1a',
         lightdark: '#ebebeb',
-        naturegreen: '#337402',
-        lemon: '#d3e59f',
+        naturegreen: '#bae4ac',
+        lemon: '#c5ee4f',
         leaf: '#FFBE00',
-        darkgreen: '#0B472D',
+        darkgreen: '#56704c',
       }),
       fontFamily: {
         'ui-sans':
