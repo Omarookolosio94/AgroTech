@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import LOGO from 'assets/images/zoges2.png';
 import {
   activelinks,
-  btn,
   documentGif,
-  farmer,
   grid,
+  homeIcon,
   links,
+  logo,
   navbtn,
   questions,
   quotes,
@@ -28,7 +27,7 @@ const Navbar = () => {
       >
         <nav className="flex justify-between items-center my-1 py-2 w-11/12 md:w-4/5 mx-auto">
           <Link to="/public/home" className="w-[60px]">
-            <img src={LOGO} alt="zoges agro" className="w-[75px] h-[60px]" />
+            <img src={logo} alt="zoges agro" className="w-[75px] h-[60px]" />
           </Link>
           <div className="hidden transition duration-300 ease-in-out md:flex justify-between gap-3">
             <NavLink
@@ -37,7 +36,7 @@ const Navbar = () => {
             >
               <div className="flex items-center gap-2">
                 <span>Home</span>
-                <img src={farmer} alt="" className="w-[24px] h-[24px]" />
+                <img src={homeIcon} alt="" className="w-[24px] h-[24px]" />
               </div>
             </NavLink>
             <NavLink
