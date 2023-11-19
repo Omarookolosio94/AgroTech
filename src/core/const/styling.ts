@@ -51,10 +51,10 @@ export const activeSidenavLink =
   'text-[28px] font-black text-naturegreen transition duration-300 ease-in-out uppercase hover:scale-105 hover:text-naturegreen';
 
 export const footerLinks =
-  'text-[12px] font-black text-gray-500 transition duration-300 ease-in-out hover:scale-105 hover:text-darkgreen';
+  'text-[12px] font-semibold text-gray-500 transition duration-300 ease-in-out hover:scale-105 hover:text-darkgreen';
 
 export const activeFooterLinks =
-  'text-[12px] font-black text-darkgreen transition duration-300 ease-in-out hover:scale-105 hover:text-darkgreen';
+  'text-[12px] font-semibold text-darkgreen transition duration-300 ease-in-out hover:scale-105 hover:text-darkgreen';
 
 export const navbtn =
   'hidden md:flex gap-2 items-center border border-2 border-cus border-leaf px-2 py-1 font-semibold transition duration-300 ease-in-out hover:scale-105';

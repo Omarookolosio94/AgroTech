@@ -82,7 +82,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <p className="border-t border-t-2 border-t-darkgreen py-5 text-xs text-center uppercase font-ui-sans">
+        <p className="border-t border-t-2 border-t-darkgreen py-5 text-xs text-center font-ui-sans">
           &copy; {new Date().getFullYear()} Zoges Agro and Allied. All Rights
           Reserved
         </p>
