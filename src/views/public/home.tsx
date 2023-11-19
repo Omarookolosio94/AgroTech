@@ -1,11 +1,11 @@
-import { btn, farmer, play } from "core/const/styling";
+import { btn, play } from "core/const/styling";
 import { zogesInfo } from "core/const/zoges";
 import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <div className="mx-auto mb-8 w-11/12 md:w-4/5">
-      <section className="mb-[80px] flex flex-col-reverse gap-3 md:flex-row">
+      <section className="mb-[35px] flex flex-col-reverse gap-3 md:flex-row">
         <div className="flex h-[60vh] w-full flex-col justify-center py-[16px] md:h-[80vh] md:w-1/2">
           <h3 className="mb-5 font-sohne text-[24px] font-semibold">
             Move Your Farm Products <br />
