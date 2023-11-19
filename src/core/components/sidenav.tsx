@@ -11,7 +11,7 @@ const Sidenav = ({
 }) => {
   return (
     <div
-      className={`absolute transition-all duration-500 ease-in-out bg-dark w-full h-full ${
+      className={`fixed transition-all duration-500 ease-in-out bg-dark w-full h-full ${
         isOpen ? '-left-0' : '-left-[100vw]'
       }`}
       style={{
