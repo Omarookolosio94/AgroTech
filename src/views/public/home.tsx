@@ -21,25 +21,25 @@ const Home = () => {
           <div className="mb-5 flex justify-center gap-5 md:justify-start">
             <Link
               to="/public/services"
-              className={`${btn} w-[150px] bg-darkgreen text-white`}
+              className={`${btn} w-full bg-darkgreen text-white md:w-[150px]`}
             >
               Our Services
             </Link>
             <Link
               to="/public/company"
-              className={`${btn} w-[150px] border border-2 border-darkgreen`}
+              className={`${btn} w-full border border-2 border-darkgreen md:w-[150px]`}
             >
               <img src={play} alt="" className="h-[24px] w-[24px]" />
               <span>Learn More</span>
             </Link>
           </div>
           <div className="flex justify-center gap-5 md:justify-start">
-            <div className="w-[150px] rounded-md bg-naturegreen p-[10px]">
+            <div className="w-full rounded-md bg-naturegreen p-[10px] md:w-[150px]">
               <span className="text-[24px] font-black text-gray-500">500k</span>{" "}
               <br />
               <span>Farm produce delivered</span>
             </div>
-            <div className="w-[150px] rounded-md bg-naturegreen p-[10px]">
+            <div className="w-full rounded-md bg-naturegreen p-[10px] md:w-[150px]">
               <span className="text-[24px] font-black text-gray-500">
                 5000+
               </span>{" "}
@@ -95,7 +95,7 @@ const Home = () => {
       </section>
       <section className="mb-[80px] flex flex-col items-center gap-5 md:flex-row">
         <div className="mb-5 flex w-full justify-center gap-5 md:w-1/2">
-          <div className="relative flex w-11/12 justify-center rounded-md md:w-1/2">
+          <div className="relative flex w-full justify-center rounded-md md:w-1/2">
             <img
               src=""
               alt=""
@@ -122,12 +122,12 @@ const Home = () => {
 
       <section className="mb-[80px] flex h-[60vh] flex-row items-center justify-center rounded-md border border-2 border-darkgreen bg-darkgreen">
         <div className="text-center">
-          <h3 className="text-ui-sans mb-5 text-[28px] capitalize">
-            Get in touch
+          <h3 className="text-ui-sans mb-5 text-[24px]">
+            <span>Get in touch</span>
           </h3>
           <a
             href={`mailto:${zogesInfo?.contact?.email}`}
-            className={`border-1 flex w-[150px] items-center justify-center gap-2 rounded-md border-2 border-white bg-darkgreen bg-naturegreen px-[24px] py-[16px] text-normal transition duration-300 ease-in-out hover:scale-105`}
+            className={`border-1 text-normal flex w-[150px] items-center justify-center gap-2 rounded-md border-2 border-white bg-darkgreen bg-naturegreen px-[24px] py-[16px] transition duration-300 ease-in-out hover:scale-105`}
           >
             <span>Send Message</span>
           </a>

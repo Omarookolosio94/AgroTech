@@ -60,4 +60,4 @@ export const navbtn =
   'hidden md:flex gap-2 items-center border border-2 border-cus border-leaf px-2 py-1 font-semibold transition duration-300 ease-in-out hover:scale-105';
 
 export const btn =
-  'flex items-center justify-center gap-2 px-[14px] py-[10px] text-xs rounded-md transition duration-300 ease-in-out hover:scale-105';
+  'flex items-center justify-center gap-2 px-[14px] py-[12px] text-xs rounded-md transition duration-300 ease-in-out hover:scale-105';
