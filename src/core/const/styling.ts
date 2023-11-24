@@ -17,6 +17,21 @@ import truckGif from 'assets/icons/truck2.gif';
 import vanGif from 'assets/icons/van.gif';
 import avocadoGif from 'assets/icons/avocado.gif';
 import warehouseGif from 'assets/icons/warehouse-open.gif';
+import harvesterImg from 'assets/images/harvester.jpg';
+import machinesImg from 'assets/images/machines.jpg';
+import tractorFieldImg from 'assets/images/tractor-in-field.jpg';
+import tractorImg from 'assets/images/tractor.jpg';
+import tractor2Img from 'assets/images/tractor2.jpg';
+import vegetablesImg from 'assets/images/vegetables.jpg';
+import plantImg from 'assets/images/watering-plant.jpg';
+
+export const harverter = harvesterImg;
+export const machines = machinesImg;
+export const tractor = tractorFieldImg;
+export const tractor1 = tractorImg;
+export const tractor2 = tractor2Img;
+export const vegetables = vegetablesImg;
+export const wateringPlant = plantImg;
 
 export const homeIcon = homeGif;
 export const mail = mailGif;

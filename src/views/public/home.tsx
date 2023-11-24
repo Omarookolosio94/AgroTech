@@ -1,4 +1,12 @@
-import { btn, play } from "core/const/styling";
+import {
+  btn,
+  harverter,
+  play,
+  tractor,
+  tractor1,
+  tractor2,
+  vegetables,
+} from "core/const/styling";
 import { zogesInfo } from "core/const/zoges";
 import { Link } from "react-router-dom";
 
@@ -49,12 +57,24 @@ const Home = () => {
           </div>
         </div>
         <div className="flex h-[50vh] w-full flex-col items-center justify-center gap-5 rounded-md md:h-[80vh] md:w-1/2">
-          <div className="h-full w-full rounded-md bg-lightdark md:h-3/5">
-            <img src="" alt="" />
+          <div className="h-full w-full overflow-hidden rounded-md border bg-lightdark md:h-3/5">
+            <img
+              src={vegetables}
+              alt="vegetables"
+              className="h-[50vh] w-full overflow-hidden lg:h-auto"
+            />
           </div>
-          <div className="hidden h-2/5 w-full gap-5 md:flex">
-            <img src="" alt="" className="w-1/2 rounded-md bg-lightdark" />
-            <img src="" alt="" className="w-1/2 rounded-md bg-lightdark" />
+          <div className="hidden h-2/5 w-full gap-5 overflow-hidden md:flex">
+            <img
+              src={tractor}
+              alt="tractor"
+              className="w-1/2 overflow-hidden rounded-md bg-lightdark"
+            />
+            <img
+              src={harverter}
+              alt="harvester"
+              className="w-1/2 overflow-hidden rounded-md bg-lightdark"
+            />
           </div>
         </div>
       </section>
@@ -95,13 +115,11 @@ const Home = () => {
       </section>
       <section className="mb-[80px] flex flex-col items-center gap-5 md:flex-row">
         <div className="mb-5 flex w-full justify-center gap-5 md:w-1/2">
-          <div className="relative flex w-full justify-center rounded-md md:w-1/2">
-            <img
-              src=""
-              alt=""
-              className="z-10 h-[300px] w-full rounded-md bg-lightdark"
-            />
-          </div>
+          <img
+            src={tractor1}
+            alt=""
+            className="z-10 h-[300px] w-auto rounded-md bg-lightdark"
+          />
         </div>
         <div className="w-full md:w-1/2">
           <h3 className="mb-5 font-sohne text-[24px] font-semibold">
@@ -120,9 +138,9 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="mb-[80px] flex h-[60vh] flex-row items-center justify-center rounded-md border border-2 border-darkgreen bg-darkgreen">
+      <section className="contact-cta mb-[80px] flex h-[60vh] flex-row items-center justify-center rounded-md border border-2 border-darkgreen bg-darkgreen">
         <div className="text-center">
-          <h3 className="text-ui-sans mb-5 text-[24px]">
+          <h3 className="text-ui-sans mb-5 text-[24px] text-white">
             <span>Get in touch</span>
           </h3>
           <a
