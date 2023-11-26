@@ -1,43 +1,37 @@
-import Company from './views/public/company';
-import Contact from './views/public/contact';
-import Home from './views/public/home';
-import Services from './views/public/services';
-import Stories from './views/public/stories';
+import { lazy } from "react";
+
+const Home = lazy(() => import("./views/public/home"));
+const Services = lazy(() => import("./views/public/services"));
+const Company = lazy(() => import("./views/public/company"));
+const Contact = lazy(() => import("./views/public/contact"));
 
 const routes = [
   {
-    name: 'Home',
-    layout: '/public',
-    path: 'home',
-    icon: '',
+    name: "Home",
+    layout: "/public",
+    path: "home",
+    icon: "",
     component: <Home />,
   },
   {
-    name: 'Services',
-    layout: '/public',
-    path: 'services',
-    icon: '',
+    name: "Services",
+    layout: "/public",
+    path: "services",
+    icon: "",
     component: <Services />,
   },
   {
-    name: 'Company',
-    layout: '/public',
-    path: 'company',
-    icon: '',
+    name: "Company",
+    layout: "/public",
+    path: "company",
+    icon: "",
     component: <Company />,
   },
   {
-    name: 'Stories',
-    layout: '/public',
-    path: 'Stories',
-    icon: '',
-    component: <Stories />,
-  },
-  {
-    name: 'Contact',
-    layout: '/public',
-    path: 'Contact',
-    icon: '',
+    name: "Contact",
+    layout: "/public",
+    path: "Contact",
+    icon: "",
     component: <Contact />,
   },
 ];

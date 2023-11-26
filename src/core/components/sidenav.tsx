@@ -48,15 +48,6 @@ const Sidenav = ({
             Company
           </NavLink>
           <NavLink
-            to="/public/stories"
-            onClick={() => close()}
-            className={({ isActive }) =>
-              isActive ? activeSidenavLink : sidenavLink
-            }
-          >
-            Stories
-          </NavLink>
-          <NavLink
             to="/public/contact"
             onClick={() => close()}
             className={({ isActive }) =>

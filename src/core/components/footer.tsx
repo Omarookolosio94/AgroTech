@@ -41,14 +41,6 @@ const Footer = () => {
                 >
                   Company
                 </NavLink>
-                <NavLink
-                  to="/public/stories"
-                  className={({ isActive }) =>
-                    !isActive ? footerLinks : activeFooterLinks
-                  }
-                >
-                  Stories
-                </NavLink>
               </nav>
             </div>
             <div className="w-1/2 md:w-1/3">

@@ -91,7 +91,7 @@ const Home = () => {
           {zogesInfo?.services?.map((service, index) => (
             <div
               key={index + 1}
-              className="w-full rounded-md border border-2 border-darkgreen p-[20px] transition duration-300 ease-in-out hover:-translate-y-[8px] md:w-[200px]"
+              className="w-full rounded-md border border-2 border-naturegreen p-[20px] transition duration-300 ease-in-out hover:-translate-y-[8px] md:w-[200px]"
             >
               <img
                 src={service?.pic}

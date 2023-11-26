@@ -33,7 +33,7 @@ const Services = () => {
 
   return (
     <div className="mx-auto mb-8 w-11/12 md:w-4/5">
-      <section className="relative mb-[50px] h-[30vh] overflow-hidden">
+      <section className="relative mb-[50px] h-[30vh] overflow-hidden rounded-md">
         <img
           src={tractor}
           alt="tractor in farmland"
@@ -168,7 +168,7 @@ const Services = () => {
       <section className="quote-cta mb-[80px] flex h-[40vh] flex-row items-center justify-center rounded-md bg-darkgreen">
         <div className="text-center">
           <h3 className="text-ui-sans mb-5 text-[24px] text-white">
-            <span>Get a Quote</span>
+            <span>Get A Quote</span>
           </h3>
           <a
             href={`mailto:${zogesInfo?.contact?.email}`}

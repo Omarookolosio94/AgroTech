@@ -57,15 +57,6 @@ const Navbar = () => {
                 <img src={truck} alt="" className="w-[24px] h-[24px]" />
               </div>
             </NavLink>
-            <NavLink
-              to="/public/stories"
-              className={({ isActive }) => (isActive ? activelinks : links)}
-            >
-              <div className="flex items-center gap-2">
-                <span>Stories</span>
-                <img src={quotes} alt="" className="w-[24px] h-[24px]" />
-              </div>
-            </NavLink>
           </div>
           <div className="flex justify-between items-center gap-2">
             <Link to="/public/contact" className={`${navbtn}`}>
