@@ -56,7 +56,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="flex h-[50vh] w-full flex-col items-center justify-center gap-5 rounded-md md:h-[80vh] md:w-1/2">
+        <div className="flex h-[30vh] w-full flex-col items-center justify-center gap-5 rounded-md md:h-[80vh] md:w-1/2">
           <div className="h-full w-full overflow-hidden rounded-md border bg-lightdark md:h-3/5">
             <img
               src={vegetables}
@@ -126,10 +126,10 @@ const Home = () => {
             Why Choose Zoges Agro & Trucking Ventures?
           </h3>
           <p className="text-dark">{zogesInfo?.pitch?.summary}</p>
-          <div className="mt-5 grid grid-cols-2 gap-5">
+          <div className="mt-5 grid grid-cols-2 gap-3">
             {zogesInfo?.pitch?.points?.map((point, index) => (
               <div key={index} className="flex items-center gap-1">
-                <p className="rounded-md bg-naturegreen px-2 py-1 text-[10px] font-bold text-gray-500">
+                <p className="rounded-md bg-naturegreen p-1 text-[10px] font-bold text-gray-500">
                   {point?.name}
                 </p>
               </div>
@@ -138,7 +138,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="contact-cta mb-[80px] flex h-[60vh] flex-row items-center justify-center rounded-md border border-2 border-darkgreen bg-darkgreen">
+      <section className="contact-cta mb-[80px] flex h-[40vh] flex-row items-center justify-center rounded-md bg-darkgreen">
         <div className="text-center">
           <h3 className="text-ui-sans mb-5 text-[24px] text-white">
             <span>Get in touch</span>

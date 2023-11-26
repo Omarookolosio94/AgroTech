@@ -122,3 +122,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.quote-cta {
+  background-image: url(assets/images/machines.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
