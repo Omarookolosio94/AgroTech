@@ -72,6 +72,7 @@
   .bg-hero {
     background: url("https://onedrive.live.com/embed?resid=B8295C03D418D49B%21818&authkey=%21AC4C5zWiJr0S5A4&width=5472&height=2809")
       no-repeat;
+    background-color: black;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -80,9 +81,67 @@
   .bg-carrot {
     background: url("https://onedrive.live.com/embed?resid=B8295C03D418D49B%21814&authkey=%21AH1mOfvhHrImzQw&width=6000&height=4000")
       no-repeat;
+    background-color: black;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+  }
+
+  .bg-vision {
+    background: url("https://onedrive.live.com/embed?resid=B8295C03D418D49B%21829&authkey=%21ADspzYhb0bZbdz8&width=8272&height=5445")
+      no-repeat;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .bg-mission {
+    background: url("https://onedrive.live.com/embed?resid=B8295C03D418D49B%21832&authkey=%21AObAWsRY-PTIWgQ&width=4288&height=2848")
+      no-repeat;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .bg-about {
+    background: url("https://onedrive.live.com/embed?resid=B8295C03D418D49B%21822&authkey=%21AHQcn8znd93YhqY&width=2500&height=1667")
+      no-repeat;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .bg-service {
+    background: url("https://onedrive.live.com/embed?resid=B8295C03D418D49B%21819&authkey=%21AKYpbf3bvpMrna0&width=3840&height=5760")
+      no-repeat;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .bg-contact {
+    background: url("https://onedrive.live.com/embed?resid=B8295C03D418D49B%21825&authkey=%21ALju-nz2T4XXors&width=3840&height=5760")
+      no-repeat;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  @media screen and (max-width: 600px) {
+    .bg-mission,
+    .bg-vision,
+    .bg-carrot,
+    .bg-hero,
+    .bg-about,
+    .bg-service,
+    .bg-contact {
+      background-attachment: scroll;
+    }
   }
 }
 
