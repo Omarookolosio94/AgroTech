@@ -16,7 +16,7 @@ const Navbar = () => {
       >
         <nav className="mx-auto flex w-11/12 items-center justify-between py-2 md:w-4/5">
           <Link to="/public/home" className="w-[60px]">
-            <img src={logo} alt="zoges agro" className="" />
+            <img src={logo} alt="zoges agro" className="" loading="lazy" />
           </Link>
           <div className="flex items-center justify-between gap-2">
             <NavLink
@@ -45,6 +45,7 @@ const Navbar = () => {
               <img
                 src="https://onedrive.live.com/embed?resid=B8295C03D418D49B%21837&authkey=%21AIRb8-NWoRsGsww&width=700&height=586"
                 alt=""
+                loading="lazy"
                 className="h-[24px] w-[24px]"
               />
             </button>

@@ -57,6 +57,7 @@ const Sidenav = ({
           <img
             src="https://onedrive.live.com/embed?resid=B8295C03D418D49B%21839&authkey=%21AIbKrdzHi9nMiL8&width=485&height=487"
             alt="close"
+            loading="lazy"
             className="h-[38px] w-[38px] rounded-full bg-white"
           />
         </div>
