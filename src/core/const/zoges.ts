@@ -1,24 +1,22 @@
-import { avocado, documentGif, farmer, truck2, warehouse } from "./styling";
-
 export const zogesInfo = {
   services: [
     {
-      name: "Logistics",
-      pic: truck2,
+      name: "Cultivation",
+      pic: "",
       summary:
-        "We transport farm produce from the farm to the market or final consumer anywhere in the country",
+        "At Zoges Agro, our fields are a vibrant tapestry of diverse crops cultivated to perfection. From hearty grains to crisp vegetables and succulent fruits, our crop variety is a testament to the rich agricultural heritage of Zoges.",
     },
     {
-      name: "Crop Cultivation",
-      pic: avocado,
+      name: "Animal Rearing",
+      pic: "",
       summary:
-        "We cultivate a variety of crops, including maize, rice, sorghum, soybeans, and cowpeas.",
+        "Delve into the heart of Zoges Agro’s animal kingdom, where our livestock flourishes in natural surroundings. Our farm is home to a range of animals, from free-ranging poultry to contented cows. Explore the diversity that defines our livestock and sets the stage for quality meat and dairy production",
     },
     {
-      name: "Warehousing as a service (WaaS)",
-      pic: warehouse,
+      name: "Trucking and Warehousing",
+      pic: "",
       summary:
-        "We provide WaaS to farmers and businesses, offering secure and flexible storage solutions for their inventory.",
+        " Zoges Agro and Trucking Ventures seamlessly bridges the gap between our farm and your destination. Our dedicated trucking division ensures the safe and efficient transportation of our farm produce. Count on us for reliable logistics that keep your orders on the move.",
     },
   ],
   summary:
@@ -34,19 +32,19 @@ export const zogesInfo = {
     points: [
       {
         name: "Experienced",
-        icon: farmer,
+        icon: "",
       },
       {
         name: "High-quality",
-        icon: documentGif,
+        icon: "",
       },
       {
         name: "Diverse",
-        icon: documentGif,
+        icon: "",
       },
       {
         name: "Knowledgeable staff",
-        icon: farmer,
+        icon: "",
       },
     ],
   },

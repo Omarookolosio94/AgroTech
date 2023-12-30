@@ -1,0 +1,1 @@
+export const logo = "https://onedrive.live.com/embed?resid=B8295C03D418D49B%21824&authkey=%21AGdCvgCEjYSPNoI&width=330&height=280";

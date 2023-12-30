@@ -1,73 +1,52 @@
-import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import {
-  activelinks,
-  documentGif,
-  grid,
-  homeIcon,
-  links,
-  logo,
-  navbtn,
-  questions,
-  quotes,
-  truck,
-} from 'core/const/styling';
-import Sidenav from './sidenav';
+import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { activelinks, links, navbtn } from "core/const/styling";
+import Sidenav from "./sidenav";
+import { logo } from "core/const/images";
 
 const Navbar = () => {
   const [showSidenav, setSidenav] = useState(false);
   return (
     <>
       <div
-        className="fixed top-0 left-0 right-0 border border-b-darkwhite"
+        className="fixed left-0 right-0 top-0 bg-opacity-10 backdrop-blur-sm backdrop-filter"
         style={{
-          background: 'rgb(254, 254, 254)',
           zIndex: 1000,
         }}
       >
-        <nav className="flex justify-between items-center my-1 py-2 w-11/12 md:w-4/5 mx-auto">
+        <nav className="mx-auto flex w-11/12 items-center justify-between py-2 md:w-4/5">
           <Link to="/public/home" className="w-[60px]">
-            <img src={logo} alt="zoges agro" className="w-[75px] h-[60px]" />
+            <img src={logo} alt="zoges agro" className="" />
           </Link>
-          <div className="hidden transition duration-300 ease-in-out md:flex justify-between gap-3">
+          <div className="flex items-center justify-between gap-2">
             <NavLink
-              to="/public/home"
+              to="/public/company"
               className={({ isActive }) => (isActive ? activelinks : links)}
             >
-              <div className="flex items-center gap-2">
-                <span>Home</span>
-                <img src={homeIcon} alt="" className="w-[24px] h-[24px]" />
-              </div>
+              About Us
             </NavLink>
             <NavLink
               to="/public/services"
               className={({ isActive }) => (isActive ? activelinks : links)}
             >
-              <div className="flex items-center gap-2">
-                <span>Services</span>
-                <img src={documentGif} alt="" className="w-[24px] h-[24px]" />
-              </div>
+              Services
             </NavLink>
+
             <NavLink
-              to="/public/company"
+              to="/public/contact"
               className={({ isActive }) => (isActive ? activelinks : links)}
             >
-              <div className="flex items-center gap-2">
-                <span>Company</span>
-                <img src={truck} alt="" className="w-[24px] h-[24px]" />
-              </div>
+              Contact
             </NavLink>
-          </div>
-          <div className="flex justify-between items-center gap-2">
-            <Link to="/public/contact" className={`${navbtn}`}>
-              <span>Contact Us</span>
-              <img src={questions} alt="" className="w-[24px] h-[24px]" />
-            </Link>
             <button
-              className="md:hidden border border-2 border-cus px-2 py-1 mr-3"
+              className="border-1 border p-2 md:hidden"
               onClick={() => setSidenav(!showSidenav)}
             >
-              <img src={grid} alt="" className="w-[24px] h-[24px]" />
+              <img
+                src="https://onedrive.live.com/embed?resid=B8295C03D418D49B%21837&authkey=%21AIRb8-NWoRsGsww&width=700&height=586"
+                alt=""
+                className="h-[24px] w-[24px]"
+              />
             </button>
           </div>
         </nav>

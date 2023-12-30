@@ -1,83 +1,76 @@
-import { Link, NavLink } from 'react-router-dom';
-import {
-  activeFooterLinks,
-  footerLinks,
-  location,
-  logo,
-  mail,
-  phone,
-} from 'core/const/styling';
-import { zogesInfo } from 'core/const/zoges';
+import { logo } from "core/const/images";
+import { zogesInfo } from "core/const/zoges";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-t-1 border-t-darkgreen">
-      <div className="w-11/12 md:w-4/5 mx-auto font-sohne">
-        <div className="flex flex-col md:flex-row py-8 gap-5">
-          <div className="w-full md:w-1/3">
-            <Link to="/public/home" className="w-[60px]">
-              <img src={logo} alt="zoges agro" className="w-[24px] h-[24px]" />
-            </Link>
-            <p className="mt-2">{zogesInfo?.summary}</p>
-          </div>
-
-          <div className="w-full md:w-2/3 flex justify-center">
-            <div className="w-1/2 md:w-1/3">
-              <h3 className="text-gray-500 font-black mb-3">Explore</h3>
-              <nav className="flex flex-col gap-3">
-                <NavLink
-                  to="/public/services"
-                  className={({ isActive }) =>
-                    !isActive ? footerLinks : activeFooterLinks
-                  }
-                >
-                  Services
-                </NavLink>
-                <NavLink
-                  to="/public/company"
-                  className={({ isActive }) =>
-                    !isActive ? footerLinks : activeFooterLinks
-                  }
-                >
-                  Company
-                </NavLink>
-              </nav>
-            </div>
-            <div className="w-1/2 md:w-1/3">
-              <h3 className="font-black text-gray-500 mb-3">Contact</h3>
-              <div className="flex flex-col gap-3">
-                <div className="flex gap-2 items-center">
-                  <img
-                    src={phone}
-                    alt="telephone"
-                    className="w-[24px] h-[24px]"
-                  />
-                  <a href={`tel:${zogesInfo?.contact?.phone}`}>
-                    {zogesInfo?.contact?.phone}
-                  </a>
-                </div>
-                <div className="flex gap-2 items-center">
-                  <img src={mail} alt="mail" className="w-[24px] h-[24px]" />
-                  <a href={`mailto:${zogesInfo?.contact?.email}`}>
-                    {zogesInfo?.contact?.email}
-                  </a>
-                </div>
-                <div className="flex gap-2 items-center">
-                  <img
-                    src={location}
-                    alt="location"
-                    className="w-[24px] h-[24px]"
-                  />
-                  <p>{zogesInfo?.contact?.address}</p>
-                </div>
-              </div>
-            </div>
+    <footer className="bg-darkgreen text-white">
+      <div className="mx-auto w-11/12 items-center pt-[75px] md:w-4/5">
+        <div className="mb-[34px] flex flex-col justify-center gap-[60px] md:flex-row md:gap-[40px] lg:gap-[60px]">
+          <div className="w-full text-center md:w-2/4">
+            <img
+              src={logo}
+              alt="zogesagrotrucking"
+              loading="lazy"
+              className="mx-auto mb-[32px] h-[60px] w-[60px]  border"
+            />
+            <p className="text-line text-[14px]">
+              At Zoges Agro & Trucking, we take pride in cultivating nature’s
+              bounty crops and raising farm animals with the utmost care to
+              provide you with premium, farm-fresh produce. Nestled in the heart
+              of Nigeria, our farm is a testament to a commitment to sustainable
+              agriculture and ethical animal husbandry. .
+            </p>
           </div>
         </div>
-        <p className="border-t border-t-2 border-t-darkgreen py-5 text-xs text-center font-ui-sans">
-          &copy; {new Date().getFullYear()} Zoges Agro and Allied. All Rights
-          Reserved
-        </p>
+        {/*
+      <div className="mb-[34px] flex items-center justify-center gap-5">
+        <a href="http://twitter.com">
+          <img
+            src={twitter}
+            className="h-[25x] w-[25px]"
+            loading="lazy"
+            alt="twitter"
+          />
+        </a>
+        <a href="http://linkedin.com">
+          <img
+            src={linkedin}
+            className="h-[25x] w-[25px]"
+            loading="lazy"
+            alt="linkedin"
+          />
+        </a>
+        <a href="http://facebook.com">
+          <img
+            src={facebook}
+            className="h-[25x] w-[25px]"
+            loading="lazy"
+            alt="facebook"
+          />
+        </a>
+        <a href="http://instagram.com">
+          <img
+            src={instagram}
+            className="h-[25x] w-[25px]"
+            loading="lazy"
+            alt="instagram"
+          />
+        </a>
+  </div>*/}
+        <div className="mb-[48px] text-center">
+          <a href={`${zogesInfo?.contact?.email}`} className="text-[14px]">
+            {zogesInfo?.contact?.email}
+          </a>
+        </div>
+        <div className="border-t border-t-white">
+          <div className="mx-auto flex items-center justify-center gap-3 py-[20px] text-[14px]">
+            <p>
+              {" "}
+              &copy; {new Date().getFullYear()} Zoges Agro and Allied. All
+              Rights Reserved
+            </p>
+          </div>
+        </div>
       </div>
     </footer>
   );

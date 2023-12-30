@@ -68,10 +68,31 @@
   font-display: block;
 }
 
+@layer components {
+  .bg-hero {
+    background: url("https://onedrive.live.com/embed?resid=B8295C03D418D49B%21818&authkey=%21AC4C5zWiJr0S5A4&width=5472&height=2809")
+      no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .bg-carrot {
+    background: url("https://onedrive.live.com/embed?resid=B8295C03D418D49B%21814&authkey=%21AH1mOfvhHrImzQw&width=6000&height=4000")
+      no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}
+
+/*
 * {
   cursor: url(assets/icons/cursormouse2.svg), auto !important;
   scroll-margin-top: 1rem;
 }
+*/
+
 ::-webkit-scrollbar {
   height: 100%;
   width: 0.75rem;
@@ -102,7 +123,6 @@ html {
 
 body {
   margin: 0;
-  font-size: 0.8rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: transparent;
@@ -117,16 +137,15 @@ body {
 }
 
 .contact-cta {
-  background-image: url(assets/images/machines.jpg);
+  background-image: url("");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .quote-cta {
-  background-image: url(assets/images/machines.jpg);
+  background-image: url("");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-

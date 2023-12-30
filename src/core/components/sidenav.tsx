@@ -1,6 +1,6 @@
-import { activeSidenavLink, closeIcon, sidenavLink } from 'core/const/styling';
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { activeSidenavLink, sidenavLink } from "core/const/styling";
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Sidenav = ({
   close,
@@ -11,24 +11,25 @@ const Sidenav = ({
 }) => {
   return (
     <div
-      className={`fixed transition-all duration-500 ease-in-out bg-dark w-full h-full ${
-        isOpen ? '-left-0' : '-left-[100vw]'
+      className={`fixed h-full w-full bg-dark transition-all duration-500 ease-in-out ${
+        isOpen ? "-left-0" : "-left-[100vw]"
       }`}
       style={{
         zIndex: 1000,
       }}
     >
-      <nav className="relative flex justify-between items-center w-11/12 h-[80vh] md:w-4/5 mx-auto">
-        <div className="flex justify-center items-center flex-col w-full h-full">
+      <nav className="relative mx-auto flex h-[80vh] w-11/12 items-center justify-between md:w-4/5">
+        <div className="flex h-full w-full flex-col items-center justify-center">
           <NavLink
-            to="/public/home"
+            to="/public/company"
             onClick={() => close()}
             className={({ isActive }) =>
               isActive ? activeSidenavLink : sidenavLink
             }
           >
-            Home
+            About Us
           </NavLink>
+
           <NavLink
             to="/public/services"
             onClick={() => close()}
@@ -38,15 +39,7 @@ const Sidenav = ({
           >
             Services
           </NavLink>
-          <NavLink
-            to="/public/company"
-            onClick={() => close()}
-            className={({ isActive }) =>
-              isActive ? activeSidenavLink : sidenavLink
-            }
-          >
-            Company
-          </NavLink>
+
           <NavLink
             to="/public/contact"
             onClick={() => close()}
@@ -58,14 +51,18 @@ const Sidenav = ({
           </NavLink>
         </div>
         <div
-          className="absolute top-[30px] right-[30px]"
+          className="absolute right-[30px] top-[30px]"
           onClick={() => close()}
         >
-          <img src={closeIcon} alt="close" className="w-[32px] h-[32px]" />
+          <img
+            src="https://onedrive.live.com/embed?resid=B8295C03D418D49B%21839&authkey=%21AIbKrdzHi9nMiL8&width=485&height=487"
+            alt="close"
+            className="h-[38px] w-[38px] rounded-full bg-white"
+          />
         </div>
       </nav>
       <div>
-        <p className="text-xs text-center text-gray-500 font-ui-sans uppercase">
+        <p className="text-center font-ui-sans text-xs uppercase text-gray-500">
           &copy; {new Date().getFullYear()} Zoges Agro and Allied. <br /> All
           Rights Reserved
         </p>

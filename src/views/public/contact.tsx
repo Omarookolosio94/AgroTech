@@ -1,4 +1,3 @@
-import { machines, mail, phone, vegetables, wateringPlant } from "core/const/styling";
 import { zogesInfo } from "core/const/zoges";
 
 const Contact = () => {
@@ -6,7 +5,7 @@ const Contact = () => {
     <div className="mx-auto mb-8 w-11/12 md:w-4/5">
       <section className="relative mb-[50px] h-[30vh] overflow-hidden rounded-md">
         <img
-          src={wateringPlant}
+          src={''}
           alt="watering plant"
           className="w-full md:mt-[-20vh] lg:mt-[-30vh]"
         />
@@ -22,18 +21,18 @@ const Contact = () => {
 
       <section className="relative mb-[50px] h-[30vh] overflow-hidden rounded-md">
         <img
-          src={machines}
+          src={""}
           alt="machines"
-          className="h-full sm:h-auto w-full md:mt-[-20vh] lg:mt-[-30vh]"
+          className="h-full w-full sm:h-auto md:mt-[-20vh] lg:mt-[-30vh]"
         />
         <div className="absolute top-0 flex h-full w-full items-center justify-center  bg-dark bg-opacity-60">
           <div className="mb-3 p-5 text-center">
-            <p className="text-white font-[16px]">Give us a call on</p>
+            <p className="font-[16px] text-white">Give us a call on</p>
             <a
               href={`tel:${zogesInfo?.contact?.phone}`}
               className={`border-1 text-normal mt-5 flex items-center justify-center gap-2 rounded-md border-2 border-white bg-white px-[24px] py-[16px] transition duration-300 ease-in-out hover:scale-105`}
             >
-              <img src={phone} alt="" className="h-[24px] w-[24px]" />
+              <img src={""} alt="" className="h-[24px] w-[24px]" />
               <span className="text-[12px]">{zogesInfo.contact?.phone}</span>
             </a>
           </div>
@@ -42,9 +41,9 @@ const Contact = () => {
 
       <section className="relative mb-[50px] h-[30vh] overflow-hidden rounded-md">
         <img
-          src={vegetables}
+          src={""}
           alt="vegetables"
-          className="h-full sm:h-auto w-full md:mt-[-20vh] lg:mt-[-30vh]"
+          className="h-full w-full sm:h-auto md:mt-[-20vh] lg:mt-[-30vh]"
         />
         <div className="absolute top-0 flex h-full w-full items-center justify-center  bg-dark bg-opacity-60">
           <div className="mb-3 p-5 text-center">
@@ -53,7 +52,7 @@ const Contact = () => {
               href={`mailto:${zogesInfo?.contact?.email}`}
               className={`border-1 text-normal flex  items-center justify-center gap-2 rounded-md border-2 border-white bg-white px-[24px] py-[16px] transition duration-300 ease-in-out hover:scale-105`}
             >
-              <img src={mail} alt="" className="h-[24px] w-[24px]" />
+              <img src={""} alt="" className="h-[24px] w-[24px]" />
               <span className="text-[12px]">Send Message</span>
             </a>
           </div>

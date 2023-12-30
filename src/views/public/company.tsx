@@ -1,4 +1,3 @@
-import { tractor2 } from "core/const/styling";
 import { zogesInfo } from "core/const/zoges";
 
 const Company = () => {
@@ -32,7 +31,7 @@ const Company = () => {
 
         <div className="relative mt-[32px] h-[30vh] overflow-hidden rounded-md md:h-[50vh]">
           <img
-            src={tractor2}
+            src=""
             alt="tractor in farmland"
             className="mt-[-15vh] w-full md:mt-[-40vh] lg:mt-[-70vh]"
           />

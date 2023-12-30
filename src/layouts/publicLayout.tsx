@@ -23,7 +23,6 @@ export default function PublicLayout() {
       <Navbar />
       <Suspense fallback={<Loader />}>
         <div
-          className="pt-[80px]"
           style={{
             zIndex: 50,
             minHeight: "80vh",

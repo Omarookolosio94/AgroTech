@@ -6,10 +6,10 @@ module.exports = {
       colors: () => ({
         dark: '#1a1a1a',
         lightdark: '#ebebeb',
-        naturegreen: '#bae4ac',
+        naturegreen: '#5d712f',
         lemon: '#c5ee4f',
         leaf: '#FFBE00',
-        darkgreen: '#56704c',
+        darkgreen: '#2e4303',
       }),
       fontFamily: {
         'ui-sans':

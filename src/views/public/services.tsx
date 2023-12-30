@@ -1,12 +1,3 @@
-import {
-  avocado,
-  chicken,
-  sugarcane,
-  tractor,
-  tractorFarm,
-  van,
-  warehouse,
-} from "core/const/styling";
 import { zogesInfo } from "core/const/zoges";
 
 const Services = () => {
@@ -35,7 +26,7 @@ const Services = () => {
     <div className="mx-auto mb-8 w-11/12 md:w-4/5">
       <section className="relative mb-[50px] h-[30vh] overflow-hidden rounded-md">
         <img
-          src={tractor}
+          src={''}
           alt="tractor in farmland"
           className="w-full md:mt-[-20vh] lg:mt-[-30vh]"
         />
@@ -51,7 +42,7 @@ const Services = () => {
       </section>
       <section className="mb-[80px] grid grid-cols-1 gap-10 md:grid-cols-2">
         <div className="w-full rounded-md border border-2 border-naturegreen px-5 py-10">
-          <img src={tractorFarm} alt="treactor" className="w-[60px]" />
+          <img src={''} alt="treactor" className="w-[60px]" />
           <h3 className="mb-5 font-sohne text-[24px] font-semibold">
             Farm Equipments Rental
           </h3>
@@ -72,7 +63,7 @@ const Services = () => {
           </div>
         </div>
         <div className="w-full rounded-md border border-2 border-naturegreen px-5 py-10">
-          <img src={van} alt="logistics" className="w-[60px] bg-naturegreen" />
+          <img src={''} alt="logistics" className="w-[60px] bg-naturegreen" />
           <h3 className="mb-5 font-sohne text-[24px] font-semibold">
             Logistics
           </h3>
@@ -85,7 +76,7 @@ const Services = () => {
         </div>
         <div className="w-full rounded-md border border-2 border-naturegreen px-5 py-10">
           <img
-            src={warehouse}
+            src={''}
             alt="warehouse"
             className="w-[60px] bg-naturegreen"
           />
@@ -120,7 +111,7 @@ const Services = () => {
           </ul>
         </div>
         <div className="w-full rounded-md border border-2 border-naturegreen px-5 py-10">
-          <img src={chicken} alt="chicken" className="w-[60px]" />
+          <img src={''} alt="chicken" className="w-[60px]" />
           <h3 className="mb-5 font-sohne text-[24px] font-semibold">
             Animal Rearing
           </h3>
@@ -141,7 +132,7 @@ const Services = () => {
         </div>
         <div className="w-full rounded-md border border-2 border-naturegreen px-5 py-10">
           <img
-            src={sugarcane}
+            src={''}
             alt="sugarcane"
             className="w-[60px] bg-naturegreen"
           />
