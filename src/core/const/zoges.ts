@@ -19,38 +19,16 @@ export const zogesInfo = {
         " Zoges Agro and Trucking Ventures seamlessly bridges the gap between our farm and your destination. Our dedicated trucking division ensures the safe and efficient transportation of our farm produce. Count on us for reliable logistics that keep your orders on the move.",
     },
   ],
-  summary:
-    "Zoges Agro & Trucking Ventures is a Kaduna-based agriculture and logistics company. We are committed to providing our customers with high-quality products and services at competitive prices.",
   contact: {
-    email: "info@zoges.ng",
-    address: "198 Kaduna road Kaduna, Nigeria",
-    phone: "+234 701 906 9000",
-  },
-  pitch: {
-    summary:
-      " We are committed to providing our customers with high-quality products and services at competitive prices. Our team of experienced and knowledgeable staff can help you with all your agricultural, logistics, and warehousing needs.",
-    points: [
-      {
-        name: "Experienced",
-        icon: "",
-      },
-      {
-        name: "High-quality",
-        icon: "",
-      },
-      {
-        name: "Diverse",
-        icon: "",
-      },
-      {
-        name: "Knowledgeable staff",
-        icon: "",
-      },
-    ],
+    email: "info@zogesagrotrucking.com",
+    address: "AS 20 Benin Street Kaduna",
+    phone: "+234 706 119 2613",
   },
   mainservice: [
     {
       name: "Cultivation Services",
+      photos:
+        "https://onedrive.live.com/embed?resid=B8295C03D418D49B%21840&authkey=%21AE67XS5Pu1lkSMs&width=612&height=408",
       subservice: [
         {
           name: "Crop Variety",
@@ -71,6 +49,8 @@ export const zogesInfo = {
     },
     {
       name: "Animal Rearing Services",
+      photos:
+        "https://onedrive.live.com/embed?resid=B8295C03D418D49B%21844&authkey=%21AHgbejMKb2oZDXI&width=259&height=194",
       subservice: [
         {
           name: "Livestock Overview",
@@ -91,11 +71,18 @@ export const zogesInfo = {
     },
     {
       name: "Trucking and Warehouse Services",
+      photos:
+        "https://onedrive.live.com/embed?resid=B8295C03D418D49B%21843&authkey=%21AJcBoVY1fouSaL8&width=612&height=458",
       subservice: [
         {
           name: "Transportation Services",
           detail:
-            "Zoges Agro and Trucking Ventures seamlessly bridges the gap between our farm and your destination. Our dedicated trucking division ensures the safe and efficient transportation of our farm produce. Count on us for reliable logistics that keep your orders on the move. ",
+            "Zoges Agro and Trucking Ventures seamlessly bridges the gap between our farm and your destination. Our dedicated trucking division ensures the safe and efficient transportation of our farm produce.",
+        },
+        {
+          name: "",
+          detail:
+            "Count on us for reliable logistics that keep your orders on the move. ",
         },
         {
           name: "Warehouse Facilities",
@@ -115,4 +102,10 @@ export const zogesInfo = {
       ],
     },
   ],
+  gallery: [
+    'https://onedrive.live.com/embed?resid=B8295C03D418D49B%21840&authkey=%21AE67XS5Pu1lkSMs&width=612&height=408',
+    'https://onedrive.live.com/embed?resid=B8295C03D418D49B%21816&authkey=%21AB4m4oQwq_ev660&width=3692&height=2848',
+    'https://onedrive.live.com/embed?resid=B8295C03D418D49B%21832&authkey=%21AObAWsRY-PTIWgQ&width=3692&height=2848',
+    'https://onedrive.live.com/embed?resid=B8295C03D418D49B%21846&authkey=%21AEkSiyZkQ8-yM4A&width=276&height=183'
+  ]
 };

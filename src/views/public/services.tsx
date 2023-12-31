@@ -14,20 +14,27 @@ const Services = () => {
       </section>
       {zogesInfo?.mainservice?.map((service: any, index: number) => (
         <>
-          <section
-            key={index}
-            className="mx-auto my-[32px] w-11/12 py-[32px] md:w-4/5 lg:w-3/5"
-          >
+          <section key={index} className="mx-auto my-[32px] w-11/12 py-[32px]">
             <h3 className="mb-[32px] text-center text-[32px] font-[500] leading-none">
               {service?.name}
             </h3>
-
-            {service?.subservice?.map((sub: any, subindex: number) => (
-              <>
-                <h5 className="mb-[16px] font-[500]">{sub?.name}</h5>
-                <p className="mb-[24px]">{sub?.detail}</p>
-              </>
-            ))}
+            <div
+              className={`flex flex-col items-center justify-between gap-5 ${
+                (index + 10) % 2 === 0 ? "lg:flex-row-reverse" : "lg:flex-row"
+              }`}
+            >
+              <div className="w-full lg:w-1/2">
+                {service?.subservice?.map((sub: any, subindex: number) => (
+                  <>
+                    <h5 className="mb-[16px] font-[500]">{sub?.name}</h5>
+                    <p className="mb-[24px]">{sub?.detail}</p>
+                  </>
+                ))}
+              </div>
+              <div className="w-full lg:w-1/2">
+                <img src={service?.photos} alt="" className="h-full w-full" />
+              </div>
+            </div>
           </section>
         </>
       ))}

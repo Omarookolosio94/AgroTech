@@ -66,7 +66,7 @@ const Footer = () => {
           <div className="mx-auto flex items-center justify-center gap-3 py-[20px] text-[14px]">
             <p>
               {" "}
-              &copy; {new Date().getFullYear()} Zoges Agro and Allied. All
+              &copy; 2020 - {new Date().getFullYear()} Zoges Agro and Allied. All
               Rights Reserved
             </p>
           </div>

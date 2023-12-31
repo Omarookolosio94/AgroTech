@@ -66,23 +66,17 @@ const Home = () => {
         <h3 className="mb-[32px] text-center text-[32px] font-[500] leading-none">
           Gallery
         </h3>
-        <div className="mb-[32px] flex items-center justify-between gap-5">
-          <div className="h-full w-1/2 overflow-hidden border">
-            <img
-              src="https://onedrive.live.com/embed?resid=B8295C03D418D49B%21816&authkey=%21AB4m4oQwq_ev660&width=3692&height=2848"
-              alt="vegetables"
-              className="h-full w-full"
-              loading="lazy"
-            />
-          </div>
-          <div className="h-full w-1/2 border">
-            <img
-              src="https://onedrive.live.com/embed?resid=B8295C03D418D49B%21832&authkey=%21AObAWsRY-PTIWgQ&width=3692&height=2848"
-              alt="harvester"
-              className="h-full w-full"
-              loading="lazy"
-            />
-          </div>
+        <div className="mb-[32px] grid grid-cols-2 gap-5">
+          {zogesInfo?.gallery?.map((photo: any, index: number) => (
+            <div key={index} className="h-full overflow-hidden border">
+              <img
+                src={photo}
+                alt=""
+                className="h-full w-full"
+                loading="lazy"
+              />
+            </div>
+          ))}
         </div>
       </section>
     </>
