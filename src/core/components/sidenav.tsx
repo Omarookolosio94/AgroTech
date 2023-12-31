@@ -64,7 +64,7 @@ const Sidenav = ({
       </nav>
       <div>
         <p className="text-center font-ui-sans text-xs uppercase text-gray-500">
-          &copy; {new Date().getFullYear()} Zoges Agro and Allied. <br /> All
+          &copy; 2020 - {new Date().getFullYear()} Zoges Agro and Allied. <br /> All
           Rights Reserved
         </p>
       </div>

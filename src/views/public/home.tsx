@@ -1,4 +1,3 @@
-import { btn } from "core/const/styling";
 import { zogesInfo } from "core/const/zoges";
 import { Link } from "react-router-dom";
 

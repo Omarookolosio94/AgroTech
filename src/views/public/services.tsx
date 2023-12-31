@@ -1,8 +1,18 @@
 import { zogesInfo } from "core/const/zoges";
+import { Helmet } from "react-helmet";
 
 const Services = () => {
   return (
     <>
+      <Helmet>
+        <title>Zoges Agro & Trucking Ventures - Services</title>
+        <meta
+          name="description"
+          content="At Zoges Agro and Trucking ventures we offer the following services: Cultivation Services, Animal Rearing Services and  Trucking and Warehouse Services "
+        />
+        <meta name="robots" content="index, follow"></meta>
+        <meta name="theme-color" content="#008f68" />
+      </Helmet>
       <section className="bg-service h-[35vh]">
         <div className="h-full w-full bg-black bg-opacity-[.5]">
           <div className="mx-auto flex h-full w-11/12 flex-col items-center justify-center pt-[80px] text-white md:w-4/5">

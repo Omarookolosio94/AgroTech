@@ -1,6 +1,17 @@
+import { Helmet } from "react-helmet";
+
 const Company = () => {
   return (
     <>
+      <Helmet>
+        <title>Zoges Agro & Trucking Ventures - About Us</title>
+        <meta
+          name="description"
+          content="Founded with a passion for farming, Zoges farms embarked on a journey to create a haven of agricultural excellence. What started as a humble plot has blossomed into a thriving farm that combines traditional farming practices with cutting-edge technology."
+        />
+        <meta name="robots" content="index, follow"></meta>
+        <meta name="theme-color" content="#008f68" />
+      </Helmet>
       <section className="bg-about h-[35vh]">
         <div className="h-full w-full bg-black bg-opacity-[.5]">
           <div className="mx-auto flex h-full w-11/12 flex-col items-center justify-center pt-[80px] text-white md:w-4/5">

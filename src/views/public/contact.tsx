@@ -1,8 +1,18 @@
 import { zogesInfo } from "core/const/zoges";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   return (
     <>
+      <Helmet>
+        <title>Zoges Agro & Trucking Ventures - Contact</title>
+        <meta
+          name="description"
+          content="We are always available to attend to your need. Reach us today via mail on info@zogesagrotrucking.com. Visit us at AS 20 Benin Street Kaduna"
+        />
+        <meta name="robots" content="index, follow"></meta>
+        <meta name="theme-color" content="#008f68" />
+      </Helmet>
       <section className="bg-contact h-[35vh]">
         <div className="h-full w-full bg-black bg-opacity-[.5]">
           <div className="mx-auto flex h-full w-11/12 flex-col items-center justify-center pt-[80px] text-white md:w-4/5">
