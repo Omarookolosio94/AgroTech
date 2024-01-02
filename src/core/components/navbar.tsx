@@ -39,7 +39,7 @@ const Navbar = () => {
               Contact
             </NavLink>
             <button
-              className="border-1 border p-2 md:hidden"
+              className="border-1 border p-2 md:hidden bg-white text-black"
               onClick={() => setSidenav(!showSidenav)}
             >
               <img
