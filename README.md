@@ -1,3 +1,3 @@
-# Zoges Agro & Trucking
+# Agro Tech
 
-We are a Kaduna-based company that provides farm equipment rental and logistics services to farmers. We are committed to helping farmers increase their productivity and profitability.
+Built with React, Typescript, Tailwindcss, Zustand
